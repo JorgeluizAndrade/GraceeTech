@@ -22,8 +22,8 @@ export default function Home() {
              <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 mb-6">
             <div className="text-6xl">👨🏾‍💻</div>
-            <h1 className="text-5xl md:text-6xl font-bold bg-blue-600  bg-clip-text text-transparent">
-              TeoloNerd
+            <h1 className="text-5xl md:text-6xl font-bold bg-amber-950  bg-clip-text text-transparent">
+              Graça & Tech
             </h1>
           </div>
 
@@ -32,7 +32,7 @@ export default function Home() {
               Olá, gente bonita! 👋
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              Bem-vindos ao <span className="font-semibold text-blue-600 dark:text-blue-400">TeoloNerd</span>.
+              Bem-vindos ao <span className="font-semibold text-amber-950 dark:text-blue-400">Graça & Tech</span>.
               <br />
               Aqui você encontrará as algumas nerdices do Jorge — eu, como materias de estudo e reflexões, e também muita teologia para glória do meu{" "}
               <span className="font-semibold text-yellow-600 dark:text-yellow-300">Senhor e Salvador Jesus Cristo</span>

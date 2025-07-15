@@ -28,7 +28,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: "TeoloNerd: " + post.title,
+    title: "Graça & Tech: " + post.title,
     excerpt: post.excerpt
   };
 }

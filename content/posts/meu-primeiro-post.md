@@ -10,16 +10,16 @@ excerpt: 'Falando um pouco sobre mim, e o por que do blog.   '
 
 Fala, gente! Tudo bom com vocês?
 
-Prazer, sou Jorge Luiz e, simplesmente decidi fazer uma espécie de blog para anotar algumas coisas minhas que irão fazer algo bom meu ao próximo. 
+Prazer, sou Jorge Luiz e, simplesmente decidi fazer uma espécie de blog para anotar algumas coisas minhas que irão fazer algo bom meu ao próximo sobre Jesus e Teconologia. 
 
-Como o nome já diz: **TeoloNerd.** 
+Como o nome já diz: **Graça & Tech.** 
 
 Vai ser uma mistura harmônica de teologia bíblica + tecnologias(meu matérias de estudo, projetos, e afins) + algumas coisas doidas. 
 Espero que goste de algumas haha.
 
 Enfim, para quem não me conhece sou Jorge Luiz, um carioca de 21 anos.
 Gosto demais de teologia e também de tecnologia(minha área de atuação profissioal), amo conversar sobre esses 2 assuntos. 
-Então, em base nesses meus gosto resolvi fazer o TeoloNerd, pois junta essas 2 paixões — sim, eu não sou bom com nomes, perdoem-me.
+Então, em base nesses meus gosto resolvi fazer o Graça & Tech, pois junta essas 2 paixões — sim, eu não sou muito criativo com nomes, perdoem-me.
 
 Sou dono de um projeto, junto com meu amigo Micael, chamado [Dev.Quizz](https://dev-quizz-edu.vercel.app/). 
 Um site desenvolvido para programadores de varias áreas que desejam testar seus conhecimentos de programação e tecnologia para entrevistas de emprego. 
@@ -28,7 +28,7 @@ Logo, se você é um programador(a) vem por **Dev.Quizz!**!
 
 
 Além disso, amo estudar a bíblia e conhecer mais e mais o SENHOR. 
-Aqui, também vai servir para colocar algumas anotações e devocionais bem legais para a gloria de Cristo. 
+Aqui, também vai servir para colocar algumas anotações, estudos e devocionais bem legais para a glória de Cristo. 
 
 
 Eu acho que é isso...

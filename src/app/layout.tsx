@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TeoloNerd",
-  description: "Teologia + Nerdice de Jorge Luiz. Aqui você encontrará diversos conteúdos de teologia e tecnologia.",
+  title: "Graça & Tech",
+  description: "Teologia + Tech. Aqui você encontrará diversos conteúdos de teologia e tecnologia escritos por Jorge Luiz.",
 };
 
 export default function RootLayout({
