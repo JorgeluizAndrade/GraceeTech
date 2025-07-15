@@ -29,12 +29,12 @@ export default function Home() {
 
           <div className="max-w-3xl mx-auto">
             <p className="text-xl md:text-2xl font-medium text-slate-700 dark:text-slate-300 leading-relaxed mb-4">
-              Olá, gente bonita! 👋
+              Olá, pessoal! 👋
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
               Bem-vindos ao <span className="font-semibold text-amber-950 dark:text-blue-400">Graça & Tech</span>.
               <br />
-              Aqui você encontrará as algumas nerdices do Jorge — eu, como materias de estudo e reflexões, e também muita teologia para glória do meu{" "}
+              Aqui você encontrará as algumas coisas legais do Jorge — eu, como materias de estudo e reflexões, e também muita teologia para glória do meu{" "}
               <span className="font-semibold text-yellow-600 dark:text-yellow-300">Senhor e Salvador Jesus Cristo</span>
               . 
             </p>
