@@ -129,7 +129,7 @@ export default async function Post({
               <div
                 className="
                 hyphens-auto
-prose prose-slate dark:prose-invert prose-lg max-w-none
+prose prose-slate dark:prose-invert max-w-none
 
 prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
 prose-headings:font-bold prose-headings:text-black dark:prose-headings:text-white
@@ -147,10 +147,11 @@ prose-code:px-1 prose-code:py-0.5 prose-code:rounded
 prose-pre:bg-black dark:prose-pre:bg-black
 prose-pre:text-white prose-pre:rounded-lg prose-pre:border prose-pre:border-blue-600
 
-prose-blockquote:border-l-4 prose-blockquote:border-blue-900
+prose-blockquote:border-l-4 prose-blockquote:border-blue-900  prose-blockquote:rounded-s-lg
+
 prose-blockquote:bg-yellow-50 dark:prose-blockquote:bg-white/10
 prose-blockquote:text-black prose-blockquote:italic dark:prose-blockquote:text-white
-prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:rounded-r
+prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:rounded-r-3xl
 "
                 dangerouslySetInnerHTML={{ __html: post.contentHtml }}
               />
