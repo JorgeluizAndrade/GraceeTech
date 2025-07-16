@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 import { getPostData, getSortedPostsData } from "@/lib/posts"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Bot, BrainCircuit, Bug, Calendar, Clock, Cross, Ghost, Glasses, Heart, Sparkles, User, Zap } from "lucide-react"
+import { ArrowLeft, Bot, BrainCircuit, Bug, Calendar, Clock, Glasses, User } from "lucide-react"
 
 export function generateStaticParams() {
   const posts = getSortedPostsData()
