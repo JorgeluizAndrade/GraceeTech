@@ -6,6 +6,8 @@ excerpt: 'Uma pequena reflexão de uma passagem bíblica onde Jesus mostra o alt
 .'
 ---
 
+![Bom samaritano e o altruísmo de Cristo](https://i.pinimg.com/736x/79/1e/4a/791e4ac7fef223edb7afeedcfc0e07f5.jpg)
+
 
 ### O bom samaritano e o altruísmo de Cristo
 
