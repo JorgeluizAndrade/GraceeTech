@@ -1,11 +1,11 @@
 ---
-title: 'Ajuntar? Eu não...'
+title: 'Juntar? Eu não...'
 date: '2025-07-17'
 tipo: 'Reflexão'
 excerpt: 'Uma reflexão uma sobre uma passagem biblica(12: 16-21 ) e, sobre minha vida.'
 ---
 
-## Ajuntar? Eu não...
+## Juntar? Eu não...
 
 
 ![Bom samaritano e o altruísmo de Cristo](https://i.pinimg.com/736x/4d/39/09/4d390920d3475ab0af8117b0e030e570.jpg)
