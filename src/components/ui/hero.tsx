@@ -19,7 +19,7 @@ export default function Hero() {
     }, [])
   
     return (
-      <div className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-white ">
+      <div className="relative w-full h-screen  overflow-hidden bg-gradient-to-br from-white to-slate-100 dark:from-slate-900 dark:to-black ">
         {/* Base gradient layers */}
         <div className="absolute inset-0 bg-gradient-radial from-sky-100 via-transparent to-transparent" />
         <div className="absolute inset-0 bg-gradient-conic from-yellow-100 via-transparent to-sky-100" />
@@ -107,8 +107,8 @@ export default function Hero() {
         {/* Content overlay area */}
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center space-y-4 p-8">
-            <h1 className="text-4xl md:text-6xl font-light text-slate-700 tracking-wide">Grace & Tech</h1>
-            <p className="text-lg text-slate-500 max-w-md mx-auto leading-relaxed">
+            <h1 className="text-4xl md:text-6xl font-light text-slate-700 dark:text-amber-100 tracking-wide">Grace & Tech</h1>
+            <p className="text-lg text-slate-500 max-w-md dark:text-blue-100 mx-auto leading-relaxed">
             Blog de Jorge Luiz. Onde tecnológica e teologia andam juntas.
             </p>
           </div>

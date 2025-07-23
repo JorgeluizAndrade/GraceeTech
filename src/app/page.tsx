@@ -5,6 +5,7 @@ import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import { BookOpen } from 'lucide-react';
 import Hero from '@/components/ui/hero';
+import { ModeToggle } from '@/components/mode-toggle';
 
 export default function Home() {
   const allPosts = getSortedPostsData();
@@ -20,9 +21,15 @@ export default function Home() {
 
   return (
     <div>
+      <div className="absolute top-0 right-0 z-20 p-4 bg-gradient-to-br from-white to-slate-100 dark:from-slate-900 dark:to-black">
+        <ModeToggle />
+      </div>
+
+
+
       <Hero />
 
-      <main className="container mx-auto max-w-2xl p-4">
+      <main className="container mx-auto max-w-2xl p-4 dark:bg-black">
 
         <Profile />
 
@@ -52,6 +59,7 @@ export default function Home() {
           </ul>
         </section>
       </main>
+
     </div>
   );
 }
