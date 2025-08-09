@@ -25,8 +25,6 @@ export default function Home() {
         <ModeToggle />
       </div>
 
-
-
       <Hero />
 
       <main className="container mx-auto max-w-2xl p-4 dark:bg-black">
@@ -52,7 +50,7 @@ export default function Home() {
                     {title}
                   </h2>
                   <time dateTime={date}>{formatDate(date)}</time>
-                  <p className="text-gray-700">{excerpt}</p>
+                  <p className="text-gray-700 dark:text-white/65">{excerpt}</p>
                 </Link>
               </li>
             ))}
