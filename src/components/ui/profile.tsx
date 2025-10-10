@@ -39,7 +39,7 @@ export default function Profile() {
 
             <div className="relative">
               <Quote className="h-4 w-4 text-blue-400 absolute -top-1 -left-1" />
-              <p className="text-slate-700 dark:text-slate-300 italic pl-4 font-medium">Siga a Cristo, não a mim.</p>
+              <p className="text-slate-700 dark:text-slate-300 italic pl-4 font-medium">A vida tem sabor de que?</p>
             </div>
 
             <div className="flex gap-2 mt-3">
