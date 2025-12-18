@@ -1,3 +1,10 @@
+---
+title: 'Onde está seu coração?'
+date: '2025-12-18'
+tipo: 'Filosolia'
+excerpt: 'Filosofando legal.'
+---
+
 > "Sou um homem doente;  
 > doente de si."  
 > — Dostoievski, *Memórias do Subsolo*
