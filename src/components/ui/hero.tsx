@@ -58,7 +58,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg md:text-xl text-[#8C7B65] dark:text-[#A69580] max-w-lg mx-auto leading-relaxed font-light">
-            Blog de Jorge Luiz. Onde tecnologia e teologia caminham juntas.
+            Creio para compreender, e compreendo para crer.
           </p>
 
           {/* Decorative line below text */}
