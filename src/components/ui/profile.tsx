@@ -31,7 +31,7 @@ export default function Profile() {
             <div className="relative bg-secondary/50 rounded-lg p-4">
               <Quote className="h-4 w-4 text-primary absolute top-3 left-3 opacity-60" />
               <p className="text-foreground/80 italic pl-6 text-sm leading-relaxed">
-                A vida tem sabor de que?
+                O dia vem abraçar meu coração. E a luz vem também acabar com a solidão. Padeceu, sofreu, morreu o meu velho eu.   
               </p>
             </div>
 
