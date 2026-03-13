@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 import { getPostData, getSortedPostsData } from "@/lib/posts"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft, Bot, BrainCircuit, Bug, Calendar, Clock, Glasses, User } from "lucide-react"
+import { ArrowLeft, Calendar, Clock, User } from "lucide-react"
 
 export function generateStaticParams() {
   const posts = getSortedPostsData()
@@ -13,7 +13,6 @@ export function generateStaticParams() {
     slug: post.slug,
   }))
 }
-
 
 export async function generateMetadata({
   params,
@@ -28,7 +27,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: "Graça & Tech: " + post.title,
+    title: "Grace & Tech: " + post.title,
     excerpt: post.excerpt
   };
 }
@@ -54,14 +53,15 @@ export default async function Post({
   const readingTime = estimateReadingTime(post.contentHtml)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-      <div className="container mx-auto max-w-4xl px-4 py-8">
-        <div className="mb-8">
+    <div className="min-h-screen bg-background">
+      <div className="container mx-auto max-w-3xl px-6 py-12">
+        {/* Back Button */}
+        <div className="mb-10">
           <Button
             variant="ghost"
             size="sm"
             asChild
-            className="hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+            className="text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
           >
             <Link href="/" className="flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
@@ -70,27 +70,18 @@ export default async function Post({
           </Button>
         </div>
 
-        {/* Card principal do post */}
-        <Card className="relative group shadow-2xl border-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl overflow-hidden">
-          {/* Efeito de Brilho no Hover */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-
-          {/* Decoração com Ícones Flutuantes */}
-          <div className="absolute top-4 right-4 flex gap-2">
-            <Bot  className="text-amber-950 animate-bounce" size={20} />
-            <Glasses  className="text-black animate-pulse" size={20} />
-            <Bug  className="text-blue-400 animate-bounce" size={20} />
-          </div>
-          <CardHeader className="pb-6">
-            {/* Título */}
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-900 to-slate-600 dark:from-slate-100 dark:to-slate-400 bg-clip-text text-transparent leading-tight">
+        {/* Main Post Card */}
+        <Card className="border-border bg-card shadow-sm overflow-hidden">
+          <CardHeader className="pb-6 pt-8 px-8">
+            {/* Title */}
+            <h1 className="text-3xl md:text-4xl font-serif font-medium text-foreground leading-tight text-balance">
               {post.title}
             </h1>
 
             {/* Metadata */}
-            <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-slate-600 dark:text-slate-400">
-              <div className="flex items-center gap-2 bg-white/50 dark:bg-slate-800/50 px-3 py-1 rounded-full backdrop-blur-sm">
-                <Calendar className="h-4 w-4 text-blue-500 animate-pulse" />
+            <div className="flex flex-wrap items-center gap-4 mt-6 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2 bg-secondary/50 px-3 py-1.5 rounded-full">
+                <Calendar className="h-4 w-4 text-primary" />
                 <time dateTime={post.date}>
                   {new Date(post.date).toLocaleDateString("pt-BR", {
                     year: "numeric",
@@ -100,12 +91,12 @@ export default async function Post({
                 </time>
               </div>
 
-              <div className="flex items-center gap-2 bg-white/50 dark:bg-slate-800/50 px-3 py-1 rounded-full backdrop-blur-sm">
-                <Clock className="h-4 w-4 text-green-500 animate-spin-slow" />
+              <div className="flex items-center gap-2 bg-secondary/50 px-3 py-1.5 rounded-full">
+                <Clock className="h-4 w-4 text-accent" />
                 <span>{readingTime} min de leitura</span>
               </div>
 
-              <Badge className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white border-0 animate-pulse">
+              <Badge className="bg-primary text-primary-foreground border-0">
                 <User className="h-3 w-3 mr-1" />
                 {post.tipo || "Artigo"}
               </Badge>
@@ -113,65 +104,74 @@ export default async function Post({
 
             {/* Excerpt */}
             {post.excerpt && (
-              <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/30 dark:to-purple-950/30 rounded-lg border border-blue-200/50 dark:border-blue-800/50">
-                <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed font-medium animate-fade-in-up">
+              <div className="mt-8 p-5 bg-secondary/30 rounded-lg border-l-4 border-primary">
+                <p className="text-foreground/80 leading-relaxed">
                   {post.excerpt}
                 </p>
               </div>
             )}
           </CardHeader>
 
-          <CardContent className="">
+          <CardContent className="px-8 pb-10">
+            <Separator className="mb-10 bg-border" />
 
-            <Separator className="mb-8" />
-
-            <article className="">
+            <article>
               <div
                 className="
-                hyphens-auto
-prose prose-slate dark:prose-invert max-w-none
-
-prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl
-prose-headings:font-bold prose-headings:text-black dark:prose-headings:text-white
-
-prose-p:text-black prose-p:font-sans dark:prose-p:text-white prose-p:leading-relaxed
-
-prose-a:text-blue-600 hover:prose-a:underline
-
-prose-strong:text-black dark:prose-strong:text-white
-
-prose-code:text-white
-prose-code:bg-black dark:prose-code:bg-black
-prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-
-prose-pre:bg-black dark:prose-pre:bg-black
-prose-pre:text-white prose-pre:rounded-lg prose-pre:border prose-pre:border-blue-600
-
-prose-blockquote:border-l-4 prose-blockquote:border-blue-900  prose-blockquote:rounded-s-lg
-
-prose-blockquote:bg-yellow-50 dark:prose-blockquote:bg-white/10
-prose-blockquote:text-black prose-blockquote:italic dark:prose-blockquote:text-white
-prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:rounded-r-3xl
-"
+                  prose prose-lg max-w-none
+                  
+                  prose-headings:font-serif prose-headings:font-medium prose-headings:text-foreground
+                  prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
+                  prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
+                  
+                  prose-p:text-foreground/85 prose-p:leading-relaxed prose-p:mb-5
+                  
+                  prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-a:font-medium
+                  
+                  prose-strong:text-foreground prose-strong:font-semibold
+                  
+                  prose-code:text-primary prose-code:bg-secondary/50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono prose-code:before:content-none prose-code:after:content-none
+                  
+                  prose-pre:bg-[#40362E] prose-pre:text-[#F2E6D8] prose-pre:rounded-lg prose-pre:border prose-pre:border-border prose-pre:shadow-inner
+                  
+                  prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:bg-secondary/30 prose-blockquote:text-foreground/80 prose-blockquote:italic prose-blockquote:px-5 prose-blockquote:py-4 prose-blockquote:rounded-r-lg prose-blockquote:not-italic prose-blockquote:font-normal
+                  
+                  prose-ul:text-foreground/85 prose-ol:text-foreground/85
+                  prose-li:marker:text-primary
+                  
+                  prose-img:rounded-lg prose-img:shadow-md prose-img:border prose-img:border-border
+                  
+                  prose-hr:border-border
+                  
+                  dark:prose-invert
+                  dark:prose-p:text-foreground/80
+                  dark:prose-pre:bg-[#1a1512] dark:prose-pre:border-[#4A3F35]
+                "
                 dangerouslySetInnerHTML={{ __html: post.contentHtml }}
               />
             </article>
           </CardContent>
         </Card>
 
-        {/* Footer com ações */}
+        {/* Footer Action */}
         <div className="mt-12 flex justify-center">
           <Button
             asChild
-            className="group bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-infigo-700 text-white border-0 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
           >
             <Link href="/" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
+              <ArrowLeft className="h-4 w-4" />
               Ver mais artigos
-              <BrainCircuit  className="h-4 w-4 group-hover:rotate-180 transition-transform" />
             </Link>
           </Button>
         </div>
+
+        {/* Footer */}
+        <footer className="mt-16 pt-8 border-t border-border text-center">
+          <p className="text-sm text-muted-foreground">
+            Grace & Tech - Onde tecnologia e teologia caminham juntas
+          </p>
+        </footer>
       </div>
     </div>
   )

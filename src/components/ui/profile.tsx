@@ -1,56 +1,50 @@
 import { Avatar, AvatarImage } from "./avatar"
 import { Card, CardContent } from "./card"
 import { Badge } from "./badge"
-import { Users, UserPlus, Quote } from "lucide-react"
+import { Quote } from "lucide-react"
 
 export default function Profile() {
   return (
-    <Card className="bg-gradient-to-br from-blue-100 to-indigo-50 dark:from-blue-950/20 dark:to-indigo-950/20 border-blue-200 dark:border-blue-800/50">
-      <CardContent className="p-6">
-        <div className="flex items-start gap-4">
-          <div className="relative">
-            <Avatar className="w-20 h-20 ring-4 ring-blue-500 dark:ring-blue-900/50">
+    <Card className="bg-card border-border overflow-hidden">
+      <CardContent className="p-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 text-center md:text-left">
+          {/* Avatar */}
+          <div className="relative flex-shrink-0">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 blur-lg scale-110" />
+            <Avatar className="w-24 h-24 ring-2 ring-primary/30 relative">
               <AvatarImage
                 src="https://i.pinimg.com/1200x/b5/5e/01/b55e0140b19c928757d7c775ebf5335e.jpg"
                 alt="Foto de perfil"
-                className="rounded-full"
+                className="rounded-full object-cover"
               />
             </Avatar>
-            <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-700 rounded-full border-2 border-white dark:border-slate-800 flex items-center justify-center">
-              <div className="w-2 h-2 bg-white rounded-full"></div>
-            </div>
           </div>
 
-          <div className="flex-1">
-            <h2 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Jorge Luiz, the sei lá.</h2>
-
-            <div className="flex gap-6 mb-3">
-              <div className="flex items-center gap-1 text-sm">
-                <Users className="h-4 w-4 text-slate-500" />
-                <span className="font-semibold text-slate-700 dark:text-slate-300">-1</span>
-                <span className="text-slate-500 dark:text-slate-400">seguidores</span>
-              </div>
-              <div className="flex items-center gap-1 text-sm">
-                <UserPlus className="h-4 w-4 text-slate-500" />
-                <span className="font-semibold text-slate-700 dark:text-slate-300">1</span>
-                <span className="text-slate-500 dark:text-slate-400">seguindo</span>
-              </div>
+          {/* Info */}
+          <div className="flex-1 space-y-4">
+            <div>
+              <h2 className="text-2xl font-serif font-medium text-foreground">Jorge Luiz</h2>
+              <p className="text-sm text-muted-foreground mt-1">Desenvolvedor & Teologando</p>
             </div>
 
-            <div className="relative">
-              <Quote className="h-4 w-4 text-blue-400 absolute -top-1 -left-1" />
-              <p className="text-slate-700 dark:text-slate-300 italic pl-4 font-medium">A vida tem sabor de que?</p>
+            {/* Quote */}
+            <div className="relative bg-secondary/50 rounded-lg p-4">
+              <Quote className="h-4 w-4 text-primary absolute top-3 left-3 opacity-60" />
+              <p className="text-foreground/80 italic pl-6 text-sm leading-relaxed">
+                A vida tem sabor de que?
+              </p>
             </div>
 
-            <div className="flex gap-2 mt-3">
-              <Badge className="text-xs">
-                👨🏾‍💻 Dev Java 
+            {/* Tags */}
+            <div className="flex flex-wrap justify-center md:justify-start gap-2">
+              <Badge className="bg-primary text-primary-foreground border-0 text-xs font-normal">
+                Dev Java
               </Badge>
-              <Badge variant="secondary" className="text-xs">
-                🌍 Brasil
+              <Badge variant="secondary" className="text-xs font-normal">
+                Brasil
               </Badge>
-              <Badge variant="secondary" className="text-xs">
-                ✝️ Cristão
+              <Badge variant="secondary" className="text-xs font-normal">
+                Cristao
               </Badge>
             </div>
           </div>
