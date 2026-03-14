@@ -22,14 +22,14 @@ Faz-me ver o reflexo daquilo que sou.
 Sou de mim o que desconheço,  
 E o que podia fazer de mim não faço.
 
-> “Estou hoje vencido, como se soubesse a verdade.  
+> Estou hoje vencido, como se soubesse a verdade.  
 > Estou hoje lúcido, como se estivesse para morrer,  
 > E não tivesse mais irmandade com as coisas  
 > Senão uma despedida, tornando-se esta casa e este lado da rua  
 > A fileira de carruagens de um comboio, e uma partida apitada  
 > De dentro da minha cabeça,  
 > E uma sacudidela dos meus nervos e um ranger de ossos na ida.  
-> Estou hoje perplexo como quem pensou e achou e esqueceu.”  
+> Estou hoje perplexo como quem pensou e achou e esqueceu.  
 > — Fernando Pessoa
 
 ---
@@ -98,6 +98,13 @@ Fernando Pessoa, o que fizeste quando descobriu a sua falsidade diante de si mes
 > “Eu me amargurei; o sabor da vida ficou amargo.”  
 > — Fernando Pessoa
 
+
+Nesse trecho do poema Tabacaria, vemos a sensação de não saber propriamente aquilo que é. Pessoa, é um indivíduo já lúcido, e viu a necessidade humana tola, de querermos parecer aquilo que não somos para nos enquadrarmos socialmente, para agradarmos os outros. Isso, obviamente, não dita o que somos.
+Depois de tanto tempo usando a sua máscara, o eu-lírico que escolheu representar na vida coletiva, Fernando enfrenta a dificuldade ao ter que retirá-la. Quando consegue, percebe como o tempo passou e como envelheceu enquanto aparentava ser outra coisa.
+
+
+Talvez, ao se olhar no espelho, no reflexo genuíno do eu de verdade, se perguntou: "Quem és tu, impostor?"
+Que miseria.
 ---
 
 Dois grandes homens experimentando a mesma coisa:  
