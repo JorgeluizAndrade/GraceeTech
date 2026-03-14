@@ -5,6 +5,9 @@ tipo: 'Filosolia/Teologia'
 excerpt: 'Caminhando pelos trilhos da verdade sobre o verdadeiro eu.'
 ---
 
+![AR](https://i.pinimg.com/736x/88/cd/ac/88cdac787012878beffc0d47465cb456.jpg)
+
+
 # A máscara caída
 
 Construí para si uma imagem,  
