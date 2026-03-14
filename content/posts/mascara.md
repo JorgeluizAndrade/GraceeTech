@@ -100,11 +100,10 @@ Fernando Pessoa, o que fizeste quando descobriu a sua falsidade diante de si mes
 
 
 Nesse trecho do poema Tabacaria, vemos a sensação de não saber propriamente aquilo que é. Pessoa, é um indivíduo já lúcido, e viu a necessidade humana tola, de querermos parecer aquilo que não somos para nos enquadrarmos socialmente, para agradarmos os outros. Isso, obviamente, não dita o que somos.
-Depois de tanto tempo usando a sua máscara, o eu-lírico que escolheu representar na vida coletiva, Fernando enfrenta a dificuldade ao ter que retirá-la. Quando consegue, percebe como o tempo passou e como envelheceu enquanto aparentava ser outra coisa.
-
+Depois de tanto tempo usando a sua máscara(o eu-lírico finalmente renunciando àquilo que construiu de si, apenas para satisfazer os outros; aquilo que o fez perder a própria identidade, inutilmente, vaidosamente e miseravelmente), Fernando enfrenta a dificuldade ao ter que retirá-la. Quando consegue, percebe como o tempo passou e como envelheceu enquanto aparentava ser outra coisa.
 
 Talvez, ao se olhar no espelho, no reflexo genuíno do eu de verdade, se perguntou: "Quem és tu, impostor?"
-Que miseria.
+
 ---
 
 Dois grandes homens experimentando a mesma coisa:  
